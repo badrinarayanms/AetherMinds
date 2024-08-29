@@ -13,8 +13,8 @@ const Wcu = () => {
 
         <div className="w-full p-10">
             <div className="flex  justify-evenly flex-wrap">
-                {features.map((feature)=>{
-                    return <Feature title={feature.title} desc={feature.desc}/>
+                {features.map((feature,index)=>{
+                    return < Feature key={index} title={feature.title} desc={feature.desc}/>
                 })}
             </div>
         </div>
