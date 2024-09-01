@@ -2,6 +2,7 @@ import React from 'react'
 
 import Image from 'next/image'
 import Feature from '@/components/Feature';
+import Link from 'next/link';
 
 
 const features=[{title:"Emotion Analysis Warning",desc:"Real-time detection of negative emotions in student inputs to provide timely support and alerts."},{title:"Grade Prediction",desc:"Predict future academic performance using machine learning models based on historical student data."},{title:"Interactive Flashcards",desc:"Engage students with a self-quizzing flashcard system to reinforce learning."},{title:"Gamified Learning",desc:"Boost student engagement through levels, points, and rewards integrated into the learning experience."},{title:"Mental Health Chatbot",desc:"Provide confidential mental health support and resources through a multilingual chatbot."},{title:"Student Community Hub",desc:"A moderated space for students to connect, share ideas, and offer mutual support."},];
@@ -14,15 +15,15 @@ const page = () => {
             <h1 className=" font-gsans font-bold  md:text-3xl text-xl">AetherMinds</h1>
         </div>
         <div className="items-center">
-            <button className="font-gsans md:font-medium text-white md:text-xl md:px-6 py-2 px-4 font-bold text-sm rounded-lg bg-Aether hover:opacity-90 transition-opacity duration-300">Get Started</button>
-        </div>
+            <Link href='/dashboard'><button className="font-gsans md:font-medium text-white md:text-xl md:px-6 py-2 px-4 font-bold text-sm rounded-lg bg-Aether hover:opacity-90 transition-opacity duration-300">Get Started</button></Link>
+            </div>
     </div>
     <div className=" bg-[url('/assets/grid.png')] bg-cover bg-center bg-no-repeat  mb-0  h-screen w-full text-center">
         <div className="h-full flex flex-col justify-center items-center">
             <h1 className="min-[320px]:text-5xl font-gsans font-bold text-6xl -mt-[12rem]  md:text-8xl xl:text-9xl">AetherMinds</h1>
             <p className="min-[320px]:text-sm font-gsans font-light text-lg  mt-2 md:text-3xl xl:text-4xl ">Elevate learning and well-being to a higher plane, <br/>where academic success meets mental clarity.</p>
             <div className="items-center mt-14 min-[320px]:mt-7">
-                <button className="min-[320px]:px-8 min-[320px]:text-4xl  font-gsans font-normal text-white text-5xl md:px-20 py-3 px-14  xl:px-28 xl:p rounded-2xl bg-Aether hover:opacity-90 transition-opacity duration-300">Get Started</button>
+                <Link href='/dashboard'><button className="min-[320px]:px-8 min-[320px]:text-4xl  font-gsans font-normal text-white text-5xl md:px-20 py-3 px-14  xl:px-28 xl:p rounded-2xl bg-Aether hover:opacity-90 transition-opacity duration-300">Get Started</button></Link>
             </div>
         </div>
         
@@ -35,7 +36,7 @@ const page = () => {
         <p className="font-gsans font-light text-lg mt-2 min-[320px]:text-sm md:text-3xl lg:text-start  xl:text-4xl text-center">Provide confidential mental health support <br/>and resources through a multilingual chatbot.</p>
       
         <div className="items-center mt-8"> 
-          <button className="font-gsans font-normal text-white text-3xl md:px-20 py-3 px-28 xl:px-28 rounded-2xl bg-Aether hover:opacity-90 transition-opacity duration-300">Try Now</button>
+        <Link href='/dashboard'><button className="font-gsans font-normal text-white text-3xl md:px-20 py-3 px-28 xl:px-28 rounded-2xl bg-Aether hover:opacity-90 transition-opacity duration-300">Try Now</button></Link>
         </div>
       </div>
      
@@ -57,7 +58,7 @@ const page = () => {
         </p>
       
         <div className="items-center mt-8"> 
-          <button className="font-gsans font-normal text-white text-3xl md:px-20 py-3 px-28 xl:px-28 rounded-2xl bg-Aether hover:opacity-90 transition-opacity duration-300">Try Now</button>
+        <Link href='/dashboard'><button className="font-gsans font-normal text-white text-3xl md:px-20 py-3 px-28 xl:px-28 rounded-2xl bg-Aether hover:opacity-90 transition-opacity duration-300">Try Now</button></Link>
         </div>
       </div>
      
