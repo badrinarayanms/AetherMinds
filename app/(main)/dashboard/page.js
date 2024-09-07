@@ -1,22 +1,9 @@
-"use client"
-import React, { useState } from 'react'; // Add useState here
+
 import Achievement from '@/components/Achievement';
 import Image from 'next/image';
 
 const Page = () => {
-    const [goals, setGoals] = useState([
-        { day: 'Mon', goal: 'Solve 5 Algebra problems.', completed: false },
-        { day: 'Tue', goal: 'Write and debug one Python script.', completed: true },
-        // Add more goals for other days as needed
-    ]);
-
-    const handleGoalChange = (day) => {
-        setGoals((prevGoals) =>
-            prevGoals.map((goal) =>
-                goal.day === day ? { ...goal, completed: !goal.completed } : goal
-            )
-        );
-    };
+    
 
     return (
         <div className="w-full h-full p-10 m-0">
@@ -57,17 +44,17 @@ const Page = () => {
                                 <div>16</div>
                             </div>
                             <div className="flex flex-col space-y-2">
-                                {goals.map((goal) => (
-                                    <div className="flex items-center" key={goal.day}>
+                                
+                                    <div className="flex items-center" key={1}>
                                         <input
                                             type="checkbox"
                                             className="mr-2"
-                                            checked={goal.completed}
-                                            onChange={() => handleGoalChange(goal.day)}
+                                            
+                                            
                                         />
-                                        <label className="  text-2xl ml-2 font-gsans  ">{goal.goal}</label>
+                                        <label className="  text-2xl ml-2 font-gsans  ">goal</label>
                                     </div>
-                                ))}
+                               
                             </div>
                         </div>
                     </div>
