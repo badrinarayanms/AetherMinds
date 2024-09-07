@@ -8,7 +8,6 @@ export const metadata = {
   import { TbReport } from "react-icons/tb";
   import { PiChatTeardropTextFill, PiStudentFill } from "react-icons/pi";
   import { FaBell ,FaRegUserCircle} from "react-icons/fa";
-
   import Image from "next/image";
   
   export default function RootLayout({ children }) {
